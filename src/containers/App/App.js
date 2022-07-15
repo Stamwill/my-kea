@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { sliderImgs } from 'api/mock'
 import classes from './App.module.css'
 
 const App = () => {
@@ -9,7 +10,9 @@ const App = () => {
             </header>
 
             <main>
-                <p>main</p>
+                {sliderImgs.map((img,idx) => (
+                    <img src={img.img} alt="test" key={idx}/>
+                ))}
             </main>
 
             <footer>
