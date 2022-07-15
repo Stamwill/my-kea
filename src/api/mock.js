@@ -9,12 +9,12 @@ export const sliderImgs = [
   {
     img: './images/desktopImageHero-1.jpg'
   },
-  {
-    img: './images/desktopImageHero-2.jpg'
-  },
-  {
-    img: './images/desktopImageHero-3.jpg'
-  }
+  // {
+  //   img: './images/desktopImageHero-2.jpg'
+  // },
+  // {
+  //   img: './images/desktopImageHero-3.jpg'
+  // }
 ]
 
 export const navigation = [
