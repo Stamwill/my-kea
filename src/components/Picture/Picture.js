@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import classes from './Picture.module.css'
 
 const Picture = React.forwardRef(function Picture(props, ref) {
-  const { className, children, sliderImgs, ...other } = props
+  const { className, children, data, ...other } = props
 
   return (
     <section className={classes.root} ref={ref} {...other}>
-      {sliderImgs.map((item, idx) => (
+      {data.map((item, idx) => (
         <picture key={idx} className={classes.imgContainer}>
           <source
             className={classes.mobile}
