@@ -1,0 +1,23 @@
+.root {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingContainer {
+}
+
+.heading {
+  font-size: 35px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.textContainer {
+}
+
+.text {
+  font-size: 15px;
+  color: var(--gray);
+}
