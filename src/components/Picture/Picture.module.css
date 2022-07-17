@@ -1,0 +1,15 @@
+.root {
+}
+
+.mobile,
+.tablet,
+.desktop {
+  width: 100vw;
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop {
+    object-fit: cover;
+    height: 100vh;
+  }
+}
