@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const Hero = () => {
   return (
     <section className={classes.root}>
-      <div>
+      <div className={classes.imgSlider}>
         {sliderImgs.map((img, idx) => (
           <img className={classes.background} src={img.img} alt="test" key={idx} />
         ))}
