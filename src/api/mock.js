@@ -20,6 +20,9 @@ export const sliderImgs = [
   // }
 ]
 
+export const aboutLight = ['./images/imageAboutLight.jpg']
+export const aboutDark = ['./images/imageAboutDark.jpg']
+
 export const navigation = [
   {
     heading: 'home',
