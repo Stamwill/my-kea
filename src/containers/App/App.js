@@ -4,6 +4,7 @@ import Hero from 'blocks/Hero'
 import TextContent from 'blocks/TextContent'
 import classes from './App.module.css'
 import AppNav from './partials/AppNav'
+import About from 'blocks/About'
 
 const App = () => {
   return (
@@ -11,14 +12,14 @@ const App = () => {
       <header>
         <AppNav />
         <Hero />
-        <TextContent heroText={heroText} />
       </header>
 
-      <main></main>
+      <main>
+        <TextContent heroText={heroText} />
+        <About />
+      </main>
 
-      <footer>
-        <p>footer</p>
-      </footer>
+      <footer></footer>
     </div>
   )
 }
