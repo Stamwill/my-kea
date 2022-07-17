@@ -1,5 +1,7 @@
 import * as React from 'react'
+import { heroText } from 'api/mock'
 import Hero from 'blocks/Hero'
+import TextContent from 'blocks/TextContent'
 import classes from './App.module.css'
 import AppNav from './partials/AppNav'
 
@@ -9,6 +11,7 @@ const App = () => {
       <header>
         <AppNav />
         <Hero />
+        <TextContent heroText={heroText} />
       </header>
 
       <main></main>
