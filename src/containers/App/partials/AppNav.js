@@ -13,6 +13,7 @@ const AppNav = React.forwardRef(function AppNav(props, ref) {
       <div className={classes.logoContainer}>
         <img className={classes.logo} src={logo} alt="company logo" />
       </div>
+      <span className={classes.hidden}>hidden</span>
     </nav>
   )
 })
