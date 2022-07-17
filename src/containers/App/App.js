@@ -1,25 +1,23 @@
 import * as React from 'react'
-import { sliderImgs } from 'api/mock'
+import Hero from 'blocks/Hero'
 import classes from './App.module.css'
+import AppNav from './partials/AppNav'
 
 const App = () => {
-    return (
-        <div className={classes.root}>
-            <header>
-                <p>nav</p>
-            </header>
+  return (
+    <div className={classes.root}>
+      <header>
+        <AppNav />
+        <Hero />
+      </header>
 
-            <main>
-                {sliderImgs.map((img,idx) => (
-                    <img src={img.img} alt="test" key={idx}/>
-                ))}
-            </main>
+      <main></main>
 
-            <footer>
-                <p>footer</p>
-            </footer>
-        </div>
-    )
+      <footer>
+        <p>footer</p>
+      </footer>
+    </div>
+  )
 }
 
 export default App
