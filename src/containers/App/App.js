@@ -12,10 +12,10 @@ const App = () => {
       <header>
         <AppNav />
         <Hero />
+        <TextContent heroText={heroText} />
       </header>
 
       <main>
-        <TextContent heroText={heroText} />
         <About />
       </main>
 
