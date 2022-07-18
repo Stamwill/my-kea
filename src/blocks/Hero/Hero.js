@@ -8,7 +8,8 @@ const Hero = () => {
   return (
     <section className={classes.root}>
       <div className={classes.imgSlider}>
-        <Picture data={sliderImgs} />
+        {/* <Picture data={sliderImgs} /> */}
+        <img className={classes.imgTest} src={sliderImgs[0].background.mobile} />
       </div>
       <div className={classes.arrowContainer}>
         <img className={classes.arrow} src={iconAngleLeft} />
