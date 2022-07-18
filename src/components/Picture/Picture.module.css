@@ -4,7 +4,13 @@
 .mobile,
 .tablet,
 .desktop {
-  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: fit-content;
+  object-fit: contain;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1200px) {
