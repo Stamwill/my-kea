@@ -9,7 +9,7 @@ const About = React.forwardRef(function About(props, ref) {
   return (
     <section className={classes.root} ref={ref} {...other}>
       <div className={classes.imgContainer}>
-        <img className={classes.img} src={aboutDark} alt="Light furniture" />
+        <img className={classes.img} src={aboutDark} alt="Dark furniture" />
       </div>
       {subHeroText.map((text, idx) => (
         <div className={classes.textContainer} key={idx}>
