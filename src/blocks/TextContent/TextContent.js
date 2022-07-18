@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 const TextContent = React.forwardRef(function TextContent(props, ref) {
   const { heroText, ...other } = props
 
-  console.log(heroText)
   return (
     <section className={classes.root} ref={ref} {...other}>
       <div className={classes.headingContainer}>
