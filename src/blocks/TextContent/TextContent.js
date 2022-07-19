@@ -1,4 +1,5 @@
 import * as React from 'react'
+import SliderClicker from 'components/SlideClicker'
 import classes from './TextContent.module.css'
 import PropTypes from 'prop-types'
 
@@ -12,6 +13,9 @@ const TextContent = React.forwardRef(function TextContent(props, ref) {
       </div>
       <div className={classes.textContainer}>
         <p className={classes.text}>{heroText[0].text}</p>
+      </div>
+      <div className={classes.clicker}>
+        <SliderClicker />
       </div>
     </section>
   )
