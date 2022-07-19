@@ -16,6 +16,33 @@
   cursor: pointer;
 }
 
+.navList {
+  display: none;
+}
+
 .hidden {
   visibility: hidden;
+}
+
+@media screen and (min-width: 900px) {
+  .root {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hamburgerContainer,
+  .hidden {
+    display: none;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    width: 50%;
+  }
+
+  .navItem {
+    color: var(--white);
+  }
 }
