@@ -10,10 +10,10 @@ const Hero = () => {
       <div className={classes.imgSlider}>
         {/* <Picture data={sliderImgs} /> */}
         <img className={classes.imgTest} src={sliderImgs[0].background.mobile} />
-      </div>
-      <div className={classes.arrowContainer}>
-        <img className={classes.arrow} src={iconAngleLeft} />
-        <img className={classes.arrow} src={iconAngleRight} />
+        <div className={classes.arrowContainer}>
+          <img className={classes.arrow} src={iconAngleLeft} />
+          <img className={classes.arrow} src={iconAngleRight} />
+        </div>
       </div>
     </section>
   )
