@@ -15,9 +15,9 @@ const App = () => {
 
   return (
     <div className={classes.root}>
-      <header>
+      <header className={classes.header}>
         <AppDrawer open={menuIsOpen} toggleMenu={toggleMenu} />
-        <Hero menu={menuIsOpen} toggleMenu={toggleMenu} />
+        <Hero toggleMenu={toggleMenu} />
         <TextContent heroText={heroText} />
       </header>
 
