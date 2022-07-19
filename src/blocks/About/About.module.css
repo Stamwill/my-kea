@@ -18,3 +18,19 @@
 .text {
   color: var(--gray);
 }
+
+@media screen and (min-width: 900px) {
+  .root {
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+  }
+  .img {
+    height: 100%;
+  }
+
+  .textContainer {
+    width: 40%;
+    justify-content: center;
+  }
+}
