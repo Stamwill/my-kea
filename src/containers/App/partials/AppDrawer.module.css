@@ -1,0 +1,41 @@
+.root {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: hidden;
+  z-index: 500;
+  transition: 0.4s;
+}
+
+.menuIsOpen {
+  height: 13%;
+  opacity: 0.97;
+}
+
+.iconClose {
+  margin-left: 30px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  /* top: 50%;
+  transform: translateY(-50%); */
+}
+
+.navLink {
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 25px;
+}
