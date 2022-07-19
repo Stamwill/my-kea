@@ -26,3 +26,14 @@
   padding: 15px;
   background-color: var(--black);
 }
+
+@media screen and (min-width: 900px) {
+  .root {
+    width: 60vw;
+    height: 59vh;
+  }
+
+  .clicker {
+    display: none;
+  }
+}
