@@ -1,0 +1,24 @@
+.root {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrow {
+  padding: 15px;
+  background-color: var(--black);
+}
+
+@media screen and (min-width: 900px) {
+  .root {
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    width: 12vw;
+    background-color: var(--black);
+  }
+}
