@@ -4,21 +4,27 @@ import classes from './TextContent.module.css'
 import PropTypes from 'prop-types'
 
 const TextContent = React.forwardRef(function TextContent(props, ref) {
-  const { heroText, ...other } = props
+  const { heading, text, toggleSlide, ...other } = props
 
   return (
     <section className={classes.root} ref={ref} {...other}>
       <div className={classes.headingContainer}>
-        <h1 className={classes.heading}>{heroText[0].heading}</h1>
+        <h1 className={classes.heading}>{heading}</h1>
       </div>
       <div className={classes.textContainer}>
-        <p className={classes.text}>{heroText[0].text}</p>
+        <p className={classes.text}>{text}</p>
       </div>
       <div className={classes.clicker}>
-        <SliderClicker />
+        <SliderClicker toggleSlide={toggleSlide} />
       </div>
     </section>
   )
 })
+
+TextContent.propTypes = {
+  heading: PropTypes.string,
+  text: PropTypes.string,
+  toggleSlide: PropTypes.func,
+}
 
 export default TextContent
